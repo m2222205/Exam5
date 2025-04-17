@@ -4,7 +4,6 @@ using ToDoList.Bll.Services;
 using ToDoList.Bll.Validators;
 using ToDoList.Repository.ToDoItemRepository;
 
-using ToDoList.Exam5.ToDoItemRepository;
 
 namespace Exam5.Configurations
 {
@@ -12,6 +11,7 @@ namespace Exam5.Configurations
     {
         public static void Configure(this WebApplicationBuilder builder)
         {
+
             builder.Services.AddScoped<IToDoItemRepository, AdoNetRepository>();
             builder.Services.AddScoped<IToDoItemService, ToDoItemService>();
 
