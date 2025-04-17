@@ -1,0 +1,16 @@
+﻿Create Table ToDoItems(
+ToDoItemId bigint primary key identity(1,1),
+Title Nvarchar(100),
+Description Nvarchar(250),
+
+CreatedAt DateTime,
+DueDate DateTime
+);
+
+
+
+
+
+
+
+
